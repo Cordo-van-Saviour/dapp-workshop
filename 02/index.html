@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Email Starter dApp</title>
+    <meta name="description" content="Email Starter dApp">
+    <meta name="author" content="ookie@crowd.sale">
+
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+
+</head>
+
+<body>
+<h1>The Best Email App Evah!</h1>
+
+<h2 id="warning">It looks like you don't have Metamask installed. Install it and come back!</h2>
+
+<form onsubmit="sendEmail(this)">
+    <label for="to">To:</label>
+    <input type="text" name="to" id="to">
+
+   <label for="subject">Subject:</label>
+    <input type="text" name="subject" id="subject">
+
+    <label for="message">Body:</label>
+    <input type="text" name="message" id="message">
+    <input type="submit">
+</form>
+
+
+<ul>TODO:
+    <li>Implement calling Smart Contract</li>
+    <li>Then add Smart Contract listener</li>
+    <li>Add jQuery so we can add content</li>
+    <li>Create table for recent messages</li>
+</ul>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
