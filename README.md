@@ -1,5 +1,5 @@
 # dapp-workshop
-Repository for dApp workshop in agreement with MPVW
+Repository for dApp workshop in agreement with MVPW
 
 ## Prerequisites
 
