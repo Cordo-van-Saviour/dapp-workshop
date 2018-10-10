@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Email Starter dApp</title>
+    <meta name="description" content="Email Starter dApp">
+    <meta name="author" content="ookie@crowd.sale">
+
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<h1>The Best Email App Evah!</h1>
+
+<h2 id="warning">It looks like you don't have Metamask installed. Install it and come back!</h2>
+
+<form name="form" id="form" onsubmit="sendEmail(this)">
+    <label for="to">To:</label>
+    <input type="text" name="to" id="to">
+
+    <label for="subject">Subject:</label>
+    <input type="text" name="subject" id="subject">
+
+    <label for="message">Body:</label>
+    <input type="text" name="message" id="message">
+    <input type="submit">
+</form>
+
+<table>
+    <thead>
+    <td>From</td>
+    <td>Subject</td>
+    <td>Message</td>
+    <td>TX Hash</td>
+    </thead>
+    <tbody>
+    <tr>
+    </tr>
+    </tbody>
+</table>
+
+<ul>TODO:
+    <li>Implement Message Display/Update</li>
+    <li>Show only the interesting events</li>
+    <li>Publish to IPFS and read message</li>
+</ul>
+
+<script src="js/contractData.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
