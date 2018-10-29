@@ -1,0 +1,26 @@
+html * {
+    background: black !important;
+    color: wheat;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+ul, li {
+    font-family: monospace;
+}
+
+body {
+    margin: 100px;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+#warning {
+    display: none;
+}
+
+form {
+    margin-bottom: 100px;
+}

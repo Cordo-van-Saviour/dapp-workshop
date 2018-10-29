@@ -10,11 +10,11 @@
 
     <link rel="stylesheet" href="css/main.css?v=1.0">
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/ipfs/dist/index.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
 <h2 id="warning">It looks like you don't have Metamask installed. Install it and come back!</h2>
 
-<form onsubmit="sendEmail(this)">
+<form name="form" id="form" onsubmit="sendEmail(this)">
     <label for="to">To:</label>
     <input type="text" name="to" id="to">
 
@@ -49,14 +49,12 @@
 
 
 <ul>TODO:
-    <li>Implement calling Smart Contract</li>
-    <li>Then add Smart Contract listener</li>
-    <li>Add jQuery so we can add content</li>
-    <li>Create table for recent messages</li>
+    <li>Encrypt email with to public key</li>
 </ul>
 
-
 <script src="js/contractData.js"></script>
+<script src="js/ipfs.js"></script>
+<script src="js/buffer.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
